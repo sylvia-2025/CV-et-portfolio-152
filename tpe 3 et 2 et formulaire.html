@@ -1,0 +1,160 @@
+TPE 3: code CSS pour positionner une icône et un lien :
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Positionnement d'icône et de lien en CSS</title>
+<style>
+    .container {
+        position: relative; /* Déclare le conteneur comme un contexte d'empilement pour les éléments internes positionnés absolument */
+        width: 200px;
+        height: 200px;
+        background-color: lightgrey;
+        text-align: center;
+    }
+    .icon {
+        position: absolute; /* Positionnement absolu à l'intérieur du container */
+        top: 50%; /* Positionne la moitié de la hauteur du container */
+        left: 50%; /* Positionne la moitié de la largeur du container */
+        transform: translate(-50%, -50%); /* Centre l'icône horizontalement et verticalement */
+    }
+    .text {
+        display: block;
+        margin-top: 40px; /* Marge depuis le haut de l'icône */
+        text-decoration: none;
+        font-weight: bold;
+        color: blue;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <img src="icon.png" alt="Icon" class="icon">
+    <a href="#" class="text">Cliquez ici</a>
+</div>
+</body>
+</html>
+                                     ```TPE 2:Disposer des photos en utilisant CSS avec une grille (grid), 
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grid Layout Example</title>
+<style>
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Diviser en 3 colonnes de largeur égale */
+        gap: 10px; /* Espacement entre les éléments */
+    }
+    .grid-item {
+        display: flex;
+        justify-content: center; /* Centrer horizontalement */
+        align-items: center; /* Centrer verticalement */
+    }
+    .photo {
+        width: 100%; /* Remplit la largeur de la colonne */
+        height: auto; /* Adapte la hauteur en proportion */
+    }
+</style>
+</head>
+<body>
+<div class="grid-container">
+    <div class="grid-item">
+        <img src="photo1.jpg" alt="Photo 1" class="photo">
+    </div>
+    <div class="grid-item">
+        <img src="photo2.jpg" alt="Photo 2" class="photo">
+    </div>
+    <div class="grid-item">
+        <img src="photo3.jpg" alt="Photo 3" class="photo">
+    </div>
+</div>
+</body>
+</html>
+```
+Formulaire en css et html
+
+*HTML*
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulaire simple</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Inscription</h2>
+    <form>
+      <label for="name">Nom :</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email :</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="password">Mot de passe :</label>
+      <input type="password" id="password" name="password" required>
+
+      <button type="submit">S'inscrire</button>
+    </form>
+  </div>
+</body>
+</html>
+```
+
+*CSS (style.css)*
+```css
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+.form-container {
+  width: 300px;
+  margin: 100px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  color: #555;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #4CAF50;
+color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+```
