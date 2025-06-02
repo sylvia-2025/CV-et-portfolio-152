@@ -1,0 +1,106 @@
+nom: Kamdem Yanba Merveille
+matricule:24S98510
+--- cv et portfolio
+### **1. Structure HTML (`index.html`)**
+```html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV & Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Kamdem Yanba Merveille,</h1>
+        <p>Etudiante en informatique niveauI |formation basé sur tout l'interface Microsoft( word,excel, PowerPoint</p>
+    </header>
+
+    <section class="cv">
+        <h2>À propos de moi</h2>
+        <p>Je suis une passionné de design et de codage .</p>
+
+        <h2>Expérience personnelle</h2>
+        <ul>
+            <li><strong>projetA</strong> - apprendre à utiliser facilement vs code et code block(3 semaine)</li>
+            <li><strong>projet b</strong> - apprendre l'infograhie et le développement web ( 2 mois</li>
+        </ul>
+
+        <h2>Compétences</h2>
+        <ul>
+            <li>HTML, C, légèrement python </li>
+            <li> designer sur papier</li>
+        </ul>
+    </section>
+
+    <section class="portfolio">
+        <h2>Portfolio</h2>
+        <div class="projet">
+            <h3>création d'un blog de vente de parfum en ligne</h3>
+            <p>. cette page vous propose la vente de parfum et d'accessoires pour femmes </p>
+        </div>
+        <div class=projet>
+            <h3>création des affiches, banderoles</h3>
+            <p>cette page vous propose des modèles simple de banderoles , affiche et encore faite grâce aux outils Microsoft.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Contact : <a href= 671391723>ntoungsiphilomene@gmail.com</a></p>
+    </footer>
+
+</body>
+</html>
+```
+
+---
+
+### **2. Styles CSS (`styles.css`)**
+```css
+body {
+    font-family: Arial, sans-serif;
+  margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: blue
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #222;
+}
+
+.cv, .portfolio {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.projet {
+    background-color: #ddd;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: blue,
+    padding: 10px;
+    position: relative;
+}
+
+}
+}
+
+}
+
